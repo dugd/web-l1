@@ -8,29 +8,35 @@
     <script src="./scripts/main.js" type="module" defer></script>
 </head>
 <body>
-    <header>
-        <h1>HPKoin</h1>
-        <img src="images/icon.ico" alt="Logo">
-
-        <nav>
+    <header class="container">
+         <span class="logo">logo</span>
+        <nav class="navigation">
             <ul>
-                <li><a href="index.html">Home</a></li>
+                <li class="active"><a href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="services.html">Services</a></li>
-                <li><a href="portfolio.html">portfolio</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li class="btn"><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
     </header>
 
-    <main>
-        <h2>Main</h2>
+    <main class="container">
+        <div class="hero">
+            <div class="hero-info">
+                <h1>Dosendo Descemus</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <button class="btn">Buy HPK!</button>
+            </div>
+            <img class="hero-image" src="images/coin.png" alt="coin">
+        </div>
         <section>
+            <h2>Main</h2>
             <p>Some content...</p>
         </section>
     </main>
 
-    <footer>
+    <footer class="container">
         <p>&copy; All right reserved</p>
     </footer>
 </body>
