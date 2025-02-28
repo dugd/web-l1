@@ -1,44 +1,34 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body {
     font-family: Arial, Helvetica, sans-serif;
-    background: linear-gradient(135deg, #1a1a1a, #0e001b);
+    background: #0e0011;
     color: white;
     font-size: 16px;
 }
 
 .container {
-    width: 80%;
+    width: 90%;
+    max-width: 1200px;
     margin: 0 auto;
 }
 
-a {
-    text-decoration: none;
-    color: inherit;
-}
-
-a:hover {
-    opacity: 0.8;
-}
-
-img {
-    max-width: 100%;
-}
-
 header {
-    padding: 50px 0;
+    padding: 20px 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-header .logo {
+.logo {
+    font-size: 28px;
+    font-weight: bold;
     text-transform: uppercase;
-    font-size: 36px;
-    font-weight: 800;
+    color: #ffcc00;
 }
 
 .navigation ul {
@@ -46,7 +36,7 @@ header .logo {
     display: flex;
     align-items: center;
     gap: 20px;
-    font-size: 24px;
+    font-size: 18px;
 }
 
 .navigation ul li {
@@ -56,10 +46,12 @@ header .logo {
 .navigation ul li a {
     color: white;
     padding: 5px 10px;
+    text-decoration: none;
 }
 
 .navigation ul li.active a {
     color: #3e0877;
+    font-weight: bold;
 }
 
 .navigation ul li.btn a {
@@ -74,31 +66,77 @@ header .logo {
 }
 
 .hero {
-    padding-bottom: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 80px 0;
+    gap: 50px;
 }
 
 .hero-info {
-    width: 530px;
-    padding-top: 70px;
+    max-width: 500px;
 }
 
 .hero-info h1 {
-    font-size: 50px;
-    font-weight: 600;
+    font-size: 48px;
+    font-weight: 700;
 }
 
 .hero-info p {
-    font-weight: 500;
-    line-height: 170%;
-    margin: 15px 0;
+    font-size: 18px;
+    line-height: 1.5;
+    margin: 20px 0;
 }
 
 .hero-info .btn {
     background: #3e0877;
     color: white;
-    font-size: 18px;
+    font-size: 20px;
     font-weight: 600;
     padding: 15px 30px;
     border-radius: 8px;
-    border: 0;
+    border: none;
+    cursor: pointer;
+}
+
+.hero-info .btn:hover {
+    background: #5a1ab5;
+}
+
+.hero-image img {
+    width: 100%;
+    max-width: 400px;
+    animation: float 3s infinite ease-in-out;
+}
+
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0) rotateZ(-5deg);
+    }
+    50% {
+        transform: translateY(-10px) rotateZ(5deg);
+    }
+}
+
+.main-content {
+    text-align: center;
+    padding: 50px 0;
+}
+
+.main-content h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.main-content p {
+    font-size: 18px;
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+footer {
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 50px;
 }
