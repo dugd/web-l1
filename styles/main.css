@@ -17,6 +17,7 @@ body {
     margin: 0 auto;
 }
 
+/* HEADER SECTION */
 header {
     padding: 20px 0;
     display: flex;
@@ -65,12 +66,17 @@ header {
     border-bottom: 3px solid #3e0877;
 }
 
+/* HERO SECTION */
 .hero {
     display: flex;
     align-items: center;
-    justify-content: space-around;
-    padding: 80px 0;
+    justify-content: space-between;
+    padding: 100px 0;
     gap: 50px;
+    text-align: left;
+    background: linear-gradient(135deg, #3e0877, #0e0011);
+    border-radius: 20px;
+    padding: 50px;
 }
 
 .hero-info {
@@ -80,6 +86,7 @@ header {
 .hero-info h1 {
     font-size: 48px;
     font-weight: 700;
+    color: #ffcc00;
 }
 
 .hero-info p {
@@ -89,24 +96,27 @@ header {
 }
 
 .hero-info .btn {
-    background: #3e0877;
-    color: white;
+    background: #ffcc00;
+    color: #0e0011;
     font-size: 20px;
     font-weight: 600;
     padding: 15px 30px;
     border-radius: 8px;
     border: none;
     cursor: pointer;
+    transition: 0.3s ease-in-out;
 }
 
 .hero-info .btn:hover {
-    background: #5a1ab5;
+    background: #d4a400;
+    transform: scale(1.1);
 }
 
 .hero-image img {
     width: 100%;
     max-width: 400px;
     animation: float 3s infinite ease-in-out;
+    filter: drop-shadow(0 0 20px #ffcc00);
 }
 
 @keyframes float {
@@ -118,25 +128,37 @@ header {
     }
 }
 
-.main-content {
+/* WHY HPK SECTION */
+.why-hpk {
     text-align: center;
-    padding: 50px 0;
+    padding: 60px 0;
 }
 
-.main-content h2 {
+.why-hpk h2 {
     font-size: 36px;
-    margin-bottom: 20px;
+    color: #ffcc00;
+    margin-bottom: 30px;
 }
 
-.main-content p {
-    font-size: 18px;
-    max-width: 800px;
-    margin: 0 auto;
-    line-height: 1.6;
+.features {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
 }
 
-footer {
+.feature {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 12px;
     text-align: center;
-    padding: 20px 0;
-    margin-top: 50px;
+    max-width: 250px;
+}
+
+.feature img {
+    width: 80px;
+    margin-bottom: 15px;
+}
+
+.feature p {
+    font-size: 18px;
 }
