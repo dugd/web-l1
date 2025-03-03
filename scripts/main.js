@@ -11,3 +11,31 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     });
 });
+
+document.addEventListener("DOMContentLoaded", () => {
+    const track = document.querySelector(".reviews-track");
+    const prevButton = document.getElementById("prev-review");
+    const nextButton = document.getElementById("next-review");
+    const reviews = document.querySelectorAll(".review");
+    const reviewWidth = reviews[0].offsetWidth + 40;
+
+    let index = 0;
+
+    function updateSlider() {
+        track.style.transform = `translateX(${-index * reviewWidth}px)`;
+    }
+
+    nextButton.addEventListener("click", () => {
+        if (index < reviews.length - 1) {
+            index++;
+            updateSlider();
+        }
+    });
+
+    prevButton.addEventListener("click", () => {
+        if (index > 0) {
+            index--;
+            updateSlider();
+        }
+    });
+});
