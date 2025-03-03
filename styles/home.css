@@ -1,5 +1,5 @@
 /* HERO SECTION */
-.hero {
+.hero-section {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -14,7 +14,7 @@
     max-width: 600px;
 }
 
-.hero-info h1 {
+.hero-title {
     font-size: 48px;
     font-weight: 700;
 }
@@ -25,7 +25,7 @@
     margin: 20px 0;
 }
 
-.hero-info .btn {
+#buy-hpk {
     font-size: 20px;
     font-weight: 600;
     padding: 15px 30px;
@@ -50,12 +50,12 @@
 }
 
 /* WHY HPK SECTION */
-.why-hpk {
+.why-hpk-section {
     text-align: center;
     padding: 60px 0;
 }
 
-.why-hpk h2 {
+.why-hpk-title {
     font-size: 36px;
     margin-bottom: 30px;
 }
@@ -73,10 +73,10 @@
     max-width: 250px;
 }
 
-.feature h3 {
+.feature-title {
     font-size: 24px;
 }
 
-.feature p {
+.feature-text {
     font-size: 18px;
 }

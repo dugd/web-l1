@@ -6,6 +6,7 @@
     <title>HPKoin | Portfolio</title>
     <link rel="stylesheet" href="./styles/main.css">
     <link rel="stylesheet" href="./styles/common.css">
+    <link rel="stylesheet" href="./styles/portfolio.css">
     <script src="./scripts/main.js" type="module" defer></script>
 </head>
 <body>
@@ -17,18 +18,58 @@
                 </div>
                 <nav class="main-nav">
                     <ul class="main-menu">
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="about.html">About</a></li>
-                        <li><a href="services.html">Services</a></li>
-                        <li><a href="portfolio.html">Portfolio</a></li>
-                        <li><a class="btn" href="contact.html">Contact</a></li>
+                        <li class="main-menu-item"><a href="index.html">Home</a></li>
+                        <li class="main-menu-item"><a href="about.html">About</a></li>
+                        <li class="main-menu-item"><a href="services.html">Services</a></li>
+                        <li class="main-menu-item"><a href="portfolio.html">Portfolio</a></li>
+                        <li class="main-menu-item"><a class="btn contact-btn" href="contact.html">Contact</a></li>
                     </ul>
                 </nav>
             </div>
         </header>
 
-        <main class="main-content">
-            
+        <main class="main-content container">
+            <section class="companies-section box-shadow">
+                <h2 class="companies-title glowing-text">Companies That Support HPK</h2>
+                <div class="companies-logos">
+                    <div class="company-block">
+                        <img class="company-logo" src="images/company1.png" alt="">
+                    </div>
+                    <div class="company-block">
+                        <img class="company-logo" src="images/company2.png" alt="">
+                    </div>
+                    <div class="company-block">
+                        <img class="company-logo" src="images/company3.png" alt="">
+                    </div>
+                </div>
+            </section>
+            <section class="reviews-section">
+                <h2 class="reviews-title glowing-text">What Our Investors Say</h2>
+                <div class="reviews-slider">
+                    <div class="reviews-track">
+                        <div class="review box-shadow">
+                            <p>"Дякую вам, що я став мільйонером, раніше я був мільярдером."</p>
+                            <strong>Анонімний кит</strong>
+                        </div>
+                        <div class="review box-shadow">
+                            <p>"Я продав усе і купив HPK. Тепер у мене 1 000 000 HPK!"</p>
+                            <strong>Оптиміст</strong>
+                        </div>
+                        <div class="review box-shadow">
+                            <p>"HPK – це не просто валюта, це стиль життя. Тепер живу у наметі!"</p>
+                            <strong>Колишній власник Lamborghini</strong>
+                        </div>
+                        <div class="review box-shadow">
+                            <p>"Моя дружина пішла, діти не говорять зі мною... але я вірю в HPK!"</p>
+                            <strong>Відданий холдер</strong>
+                        </div>
+                        <div class="review box-shadow">
+                            <p>"Це моя найкраща інвестиція!"</p>
+                            <strong>Засновник HPK</strong>
+                        </div>
+                    </div>
+                </div>
+            </section>
         </main>
 
         <footer class="nav-footer">
