@@ -8,53 +8,58 @@
     <script src="./scripts/main.js" type="module" defer></script>
 </head>
 <body>
-    <header class="container">
-        <span class="logo">HPKoin</span>
-        <nav class="navigation">
-            <ul>
-                <li class="active"><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="services.html">Services</a></li>
-                <li><a href="portfolio.html">Portfolio</a></li>
-                <li class="btn"><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+    <div class="wrapper">
+        <header class="top-navigation">
+            <div class="container">
+                <span class="logo">HPKoin</span>
+                <nav class="main-nav">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                        <li><a class="btn" href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
 
-    <main class="container">
-        <section class="hero box-shadow">
-            <div class="hero-info">
-                <h1 class="glowing-text">Docendo Descemus</h1>
-                <p id="funny-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
-                <button class="btn">Buy HPK Now!</button>
-            </div>
-            <div class="hero-image">
-                <img src="images/coin.png" alt="HPKoin">
-            </div>
-        </section>
+        <main class="content container">
+            <section class="hero box-shadow">
+                <div class="hero-info">
+                    <h1 class="glowing-text">Docendo Descemus</h1>
+                    <p id="funny-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+                    <button class="btn">Buy HPK Now!</button>
+                </div>
+                <div class="hero-image">
+                    <img src="images/coin.png" alt="HPKoin">
+                </div>
+            </section>
 
-        <section class="why-hpk">
-            <h2 class="glowing-text">Why Choose HPK?</h2>
-            <div class="features">
-                <div class="feature box-shadow">
-                    <h3>Feature 1</h3>
-                    <p>Lorem Ipsum.</p>
+            <section class="why-hpk">
+                <h2 class="glowing-text">Why Choose HPK?</h2>
+                <div class="features">
+                    <div class="feature box-shadow">
+                        <h3>Feature 1</h3>
+                        <p>Lorem Ipsum.</p>
+                    </div>
+                    <div class="feature box-shadow">
+                        <h3>Feature 2</h3>
+                        <p>Lorem Ipsum.</p>
+                    </div>
+                    <div class="feature box-shadow">
+                        <h3>Feature 3</h3>
+                        <p>Lorem Ipsum.</p>
+                    </div>
                 </div>
-                <div class="feature box-shadow">
-                    <h3>Feature 2</h3>
-                    <p>Lorem Ipsum.</p>
-                </div>
-                <div class="feature box-shadow">
-                    <h3>Feature 3</h3>
-                    <p>Lorem Ipsum.</p>
-                </div>
+            </section>
+        </main>
+
+        <footer class="nav-footer">
+            <div class="container">
+                <p>&copy; 2025 HPKoin. Not a financial advice.</p>
             </div>
-        </section>
-    </main>
-    <footer>
-        <div class="container">
-            <p>&copy; 2025 HPKoin. Not a financial advice.</p>
-        </div>
-    </footer>
+        </footer>
+    </div>
 </body>
 </html>
