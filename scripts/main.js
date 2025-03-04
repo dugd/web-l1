@@ -58,3 +58,7 @@ document.querySelectorAll('.question-title').forEach(title => {
         }
     });
 });
+
+document.querySelector('.burger').addEventListener('click', function() {
+    this.classList.toggle('active');
+});
