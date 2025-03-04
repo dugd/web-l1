@@ -26,11 +26,20 @@
 }
 
 #buy-hpk {
+    background: #ffcc00;
+    color: white;
+    border-radius: 8px;
     font-size: 20px;
     font-weight: 600;
     padding: 15px 30px;
     border: none;
     cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+#buy-hpk:hover {
+    background: #ff6d00;
+    transform: scale(1.1);
 }
 
 .hero-image img {

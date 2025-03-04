@@ -72,11 +72,21 @@ body {
 }
 
 .main-menu-item a.contact-btn {
+    background: #ffcc00;
+    color: white;
+    border-radius: 8px;
+    padding: 10px 20px;
+    transition: 0.3s ease-in-out;
     display: inline-block; 
 }
 
 .main-menu-item.active a.contact-btn {
     background: #ff6d00;
+}
+
+.main-menu-item a.contact-btn:hover {
+    background: #ff6d00;
+    transform: scale(1.1);
 }
 
 /* FOOTER SECTION */
