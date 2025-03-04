@@ -39,3 +39,22 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     });
 });
+
+document.querySelectorAll('.question-title').forEach(title => {
+    title.addEventListener('click', () => {
+        const parent = title.parentElement;
+        const content = parent.querySelector('.question-content');
+        const plusIcon = title.querySelector('.open');
+        const minusIcon = title.querySelector('.close');
+
+        if (content.style.display === 'block') {
+            content.style.display = 'none';
+            plusIcon.style.display = 'inline';
+            minusIcon.style.display = 'none';
+        } else {
+            content.style.display = 'block';
+            plusIcon.style.display = 'none';
+            minusIcon.style.display = 'inline';
+        }
+    });
+});
