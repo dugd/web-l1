@@ -13,10 +13,15 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 document.addEventListener("DOMContentLoaded", () => {
+    if (document.querySelector(".reviews-section") === null) {
+        return;
+    }
+
     const track = document.querySelector(".reviews-track");
     const prevButton = document.getElementById("prev-review");
     const nextButton = document.getElementById("next-review");
     const reviews = document.querySelectorAll(".review");
+
     const reviewWidth = reviews[0].offsetWidth + 40;
 
     let index = 0;
@@ -39,6 +44,15 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     });
 });
+
+document.addEventListener("DOMContentLoaded", () => {
+    const mainContent = document.querySelector('.main-content');
+    if (mainContent) {
+        setTimeout(() => {
+            mainContent.classList.add("show");
+        }, 50);
+    }
+})
 
 document.querySelectorAll('.question-title').forEach(title => {
     title.addEventListener('click', () => {
