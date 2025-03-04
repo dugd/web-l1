@@ -139,7 +139,7 @@ body {
     transform: rotate(45deg) translate(0, 50%);
 }
 
-@media (max-width: 900px) {
+@media (max-width: 1050px) {
     .burger {
         display: flex;
     }
