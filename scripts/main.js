@@ -75,4 +75,5 @@ document.querySelectorAll('.question-title').forEach(title => {
 
 document.querySelector('.burger').addEventListener('click', function() {
     this.classList.toggle('active');
+    document.querySelector(".main-nav").classList.toggle("open");
 });

@@ -32,7 +32,6 @@
 .question-toggle .icon {
     width: 24px;
     height: 24px;
-    filter: invert(100%);
     user-select: none;
 }
 
